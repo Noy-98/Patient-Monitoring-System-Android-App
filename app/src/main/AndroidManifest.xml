@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PatientMonitoringApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".Hum_Records"
+            android:exported="false" />
+        <activity
+            android:name=".Temp_Records"
+            android:exported="false" />
+        <activity
+            android:name=".BPM_Records"
+            android:exported="false" />
+        <activity
+            android:name=".Add_Record_3"
+            android:exported="false" />
+        <activity
+            android:name=".Add_Record_2"
+            android:exported="false" />
+        <activity
+            android:name=".Add_Record"
+            android:exported="false" />
+        <activity
+            android:name=".Records"
+            android:exported="false" />
+        <activity
+            android:name=".Resp_Value"
+            android:exported="false" />
+        <activity
+            android:name=".Temp_Value"
+            android:exported="false" />
+        <activity
+            android:name=".Heart_Rate_Value"
+            android:exported="false" />
+        <activity
+            android:name=".Respiratory_Rate_History"
+            android:exported="false" />
+        <activity
+            android:name=".Temperature_History"
+            android:exported="false" />
+        <activity
+            android:name=".Edit_Profile"
+            android:exported="false" />
+        <activity
+            android:name=".Forgot_Password"
+            android:exported="false" />
+        <activity
+            android:name=".Heart_Rate_History"
+            android:exported="false" />
+        <activity
+            android:name=".Patient_Details"
+            android:exported="false" />
+        <activity
+            android:name=".Add_Patient"
+            android:exported="false" />
+        <activity
+            android:name=".Profile"
+            android:exported="false" />
+        <activity
+            android:name=".Home_Dashboard"
+            android:exported="false" />
+        <activity
+            android:name=".Signup"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
